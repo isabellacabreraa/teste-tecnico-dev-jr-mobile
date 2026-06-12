@@ -18,13 +18,13 @@ export default function App() {
                     initialRouteName="Perfil"
                     screenOptions={{
                         headerStyle: {
-                            backgroundColor: '#af1e90',
+                            backgroundColor: '#758fad',
                         },
                         headerTintColor: '#fff',
                         headerTitleStyle: {
                             fontWeight: 'bold',
                         },
-                        drawerActiveTintColor: '#a31eaf',
+                        drawerActiveTintColor: '#758fad',
                         drawerActiveBackgroundColor: '#334155',
                         drawerLabelStyle: {
                             fontSize: 16,

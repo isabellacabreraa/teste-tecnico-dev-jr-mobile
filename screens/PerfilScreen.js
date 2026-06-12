@@ -13,7 +13,7 @@ export default function PerfilScreen() {
 
                 <View style={styles.sobreContainer}>
                     <Text style={styles.sobreTitulo}>Sobre mim</Text>
-                    <Text style={styles.sobreTexto}>Estudante de Desenvolvimento de sistemas </Text>
+                    <Text style={styles.sobreTexto}> Nasci em 25/07/2008 e estou no último ano do Ensino Médio na escola SESI Valinhos 299. Além da escola também faço o curso técnico de Desenvolvimento de Sistemas no SENAI Valinhos, atualmente estou finalizando o terceiro semestre. </Text>
 
                 </View>
         </ScrollView>
@@ -45,10 +45,11 @@ const styles = StyleSheet.create({
         marginBottom: 20,
     },
     sobreContainer: {
-        width: '100%',
+        width: '70%',
         padding: 15,
         backgroundColor: '#f9f9f9',
         borderRadius: 10,
+        marginTop: 20,
     },
     sobreTitulo: {
         fontSize: 23,

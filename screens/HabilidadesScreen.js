@@ -1,25 +1,27 @@
 import React from 'react';
 import { View, Text, FlatList, StyleSheet } from 'react-native';
 
-const skills = [
-  { id: '1', name: 'React Native' },
-  { id: '2', name: 'JavaScript (ES6+)' },
+const habilidades = [
+  { id: '1', name: 'JavaScript' },
+  { id: '2', name: 'HTML5' },
   { id: '3', name: 'TypeScript' },
-  { id: '4', name: 'Expo' },
-  { id: '5', name: 'Git & GitHub' },
-  { id: '6', name: 'Styled Components' },
+  { id: '4', name: 'React' },
+  { id: '5', name: 'Node.js' },
+  { id: '6', name: 'React Native' },
+  { id: '7', name: 'CSS3' },
+  { id: '8', name: 'Git & GitHub' },
 ];
 
 export default function HabilidadesScreen() {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Minhas Habilidades</Text>
+      <Text style={styles.titulo}>Minhas Habilidades</Text>
       <FlatList
-        data={skills}
+        data={habilidades}
         keyExtractor={item => item.id}
         renderItem={({ item }) => (
-          <View style={styles.skillItem}>
-            <Text style={styles.skillText}>• {item.name}</Text>
+          <View style={styles.habilidade}>
+            <Text style={styles.textoHabilidade}>• {item.name}</Text>
           </View>
         )}
       />
@@ -33,19 +35,19 @@ const styles = StyleSheet.create({
     padding: 20,
     backgroundColor: '#fff',
   },
-  title: {
+  titulo: {
     fontSize: 22,
     fontWeight: 'bold',
     marginBottom: 20,
     color: '#333',
     textAlign: 'center',
   },
-  skillItem: {
+  habilidade: {
     padding: 15,
     borderBottomWidth: 1,
     borderBottomColor: '#eee',
   },
-  skillText: {
+  textoHabilidade: {
     fontSize: 18,
     color: '#555',
   },
